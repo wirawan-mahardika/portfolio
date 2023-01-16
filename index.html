@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="font-quicksand">
+    <nav class="text-gray-800 p-2 fixed top-0 right-0 left-0 flex justify-between border-b border-black bg-white">
+        <h1 class="text-lg font-extrabold">WM</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 rotate-180  cursor-pointer navToggle hover:text-slate-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+        </svg>
+        
+    </nav>
+
+    <!-- scroll to top -->
+    <a href="" title="scroll to top" class="fixed right-0 bottom-0 mb-4 mr-4 border border-gray-900 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+        </svg>
+    </a>
+
+    <!-- hidden navbar -->
+    <div class="right-0 hidden-navbar hidden bottom-0 top-0 w-3/5 fixed bg-slate-800 justify-center pt-4 content-center flex-col z-10">
+        <div class="w-full text-center text-red-700 font-extrabold font-sans">
+            <div class="cursor-pointer w-fit mx-auto close-nav hover:text-red-900">CLOSE</div>
+        </div>
+        <ul class="font-semibold flex gap-x-3 font-sans flex-col text-right gap-y-8 h-full text-slate-100 justify-center w-full content-center items-center">
+            <li class="hover:text-slate-400"><a href="#about">About</a></li>
+            <li class="hover:text-slate-400"><a href="#project">Project</a></li>
+            <li class="hover:text-slate-400"><a href="#skill">Skill</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="mt-16 p-2 font-sans">
+        <img src="svg/bg-1.png" class="rounded-full mb-7 w-4/5 mx-auto">
+        <div class="">
+            <h1 class="font-extrabold text-xl text-center">WIRAWAN MAHARDIKA</h1>
+            <p class="font-bold text-center">Backend Developer</p>
+            <p class="text-sm text-center">Baubau, Sulawesi Tenggara</p>
+        </div>
+    </div>
+    <div class="w-ful flex p-2 justify-evenly mt-5 gap-y-2">
+        <a href="">
+            <img class="w-9 h-9" src="svg/instagram.svg" alt="">
+        </a>
+        <a href="">
+            <img class="w-9 h-9" src="svg/facebook.svg" alt="">
+        </a>
+        <a href="">
+            <img class="w-9 h-9" src="svg/github.svg" alt="">
+        </a>
+        <a href="">
+            <img class="w-9 h-9" src="svg/whatsapp.svg" alt="">
+        </a>
+    </div>
+
+    <div class="p-4 mt-28 pt-16" id="about">
+        <h2 class="font-bold text-center text-lg">A little bit about me</h2>
+        <hr class="bg-slate-900 w-28 mx-auto mt-1">
+        <p class="mt-5 text-sm font-sans text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis animi fugit, nihil, explicabo voluptas consequatur voluptatem vero laudantium aliquid, quas delectus. Odio reiciendis, eius ad velit adipisci quae quo nobis?</p>
+    </div>
+    
+    <div class="mt-28 pt-16" id="project">
+        <h2 class="font-bold text-lg text-center">Recent Project</h2>
+        <hr class="border mx-auto bg-black w-28 mt-1">
+        <div class="p-4 mt-5 shadow shadow-slate-500 w-4/5 mx-auto">
+            <img src="svg/project1.png" alt="">
+            <h3 class="font-semibold text-center text-sm">My Team </h3>
+            <p class="text-sm text-center mt-2">A project that i recently made just for fun</p>
+        </div>
+        <div class="p-4 mt-5 shadow shadow-slate-500 w-4/5 mx-auto">
+            <h2 class="text-center text-slate-600 font-semibold">COMING SOON</h2>
+        </div>
+        <div class="p-4 mt-5 shadow shadow-slate-500 w-4/5 mx-auto">
+            <h2 class="text-center text-slate-600 font-semibold">COMING SOON</h2>
+        </div>
+    </div>
+    
+    <div class="mt-28 pt-16" id="skill">
+        <h2 class="font-bold text-lg text-center">Skill</h2>
+        <hr class="border mx-auto bg-black w-28 mt-1">
+        <div class="flex flex-col gap-y-2 mt-6">
+            <div class="p-4 w-5/6 mx-auto">
+                <img src="svg/tailwindcss.svg" class="w-32 mx-auto" alt="tailwindcss">
+            </div>
+            <div class="p-4 w-5/6 mx-auto">
+                <img src="svg/javascript-js-seeklogo.com.svg" class="w-32 mx-auto" alt="javascript">
+            </div>
+            <div class="p-4 w-5/6 mx-auto">
+                <img src="svg/nodejs-seeklogo.com.svg" class="w-32 mx-auto" alt="nodejs">
+            </div>
+            <div class="p-4 w-5/6 mx-auto">
+                <img src="svg/mongodb.svg" class="w-32 mx-auto" alt="mongodb">
+            </div>
+            <div class="p-4 w-5/6 mx-auto">
+                <img src="svg/jwt.svg" class="w-32 mx-auto" alt="nodejs">
+            </div>
+            <div class="p-4 w-5/6 mx-auto">
+                <img src="svg/typescript-seeklogo.com.svg" class="w-32 mx-auto grayscale" alt="typescript">
+                <h2 class="text-center text-slate-600 font-semibold">COMING SOON</h2>
+            </div>
+            <div class="p-4 w-5/6 mx-auto">
+                <img src="svg/redis.svg" class="w-32 mx-auto grayscale" alt="java">
+                <h2 class="text-center text-slate-600 font-semibold">COMING SOON</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full bg-slate-900 text-gray-300 mt-10 text-[12px] p-2 text-center">
+        <p>&copy; Copyright 2023</p>
+    </footer>
+    
+    <script>
+        $(document).ready(function(){
+            $('.navToggle').click(function() {
+                $('.hidden-navbar').toggle(function(){})
+            })
+
+            $('.close-nav').click(function() {
+                $('.hidden-navbar').toggle(function(){})
+            })
+
+
+        })
+    </script>
+</body>
+</html>
