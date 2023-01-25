@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body class="font-quicksand">
-    <nav class="text-gray-800 p-2 fixed top-0 right-0 left-0 flex justify-between border-b border-black bg-white">
-        <h1 class="text-lg font-extrabold">WM</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 rotate-180  cursor-pointer navToggle hover:text-slate-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
-        </svg>
+<body class="font-quicksand xl:bg-slate-300">
+    <nav class="text-gray-800 p-2 fixed top-0 right-0 left-0 flex justify-between items-baseline border-b border-black bg-white lg:px-7 md:p-4 xl:justify-start xl:gap-x-8">
+        <h1 class="text-lg font-extrabold md:text-2xl xl:text-3xl">WM</h1>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 rotate-180  cursor-pointer navToggle hover:text-slate-500 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+            </svg>
+
+            <!-- Navbar when it reach medium width -->
+            <div>
+                <ul class="font-semibold md:flex gap-x-6 font-sans text-right gap-y-8 h-full justify-center w-full content-center items-center hidden text-base">
+                    <li class="hover:text-slate-400"><a href="#about">About</a></li>
+                    <li class="hover:text-slate-400"><a href="#project">Project</a></li>
+                    <li class="hover:text-slate-400"><a href="#skill">Skill</a></li>
+                </ul>
+            </div>
+        </div>
         
     </nav>
 
@@ -37,43 +48,45 @@
         </ul>
     </div>
 
-    <!-- Content -->
-    <div class="mt-16 p-2 font-sans">
-        <img src="svg/bg-1.png" class="rounded-full mb-7 w-4/5 mx-auto">
-        <div class="">
-            <h1 class="font-extrabold text-xl text-center">WIRAWAN MAHARDIKA</h1>
+    <!-- content -->
+    <div class="mt-16 p-2 font-sans lg:mt-20">
+        <img src="svg/bg-1.png" class="rounded-full mb-7 w-7/12 xs:w-5/12 mx-auto sm:w-1/4 lg:w-2/12 ">
+        <div>
+            <h1 class="font-extrabold text-xl text-center sm:text-2xl sm:mb-1">WIRAWAN MAHARDIKA</h1>
             <p class="font-bold text-center">Backend Developer</p>
             <p class="text-sm text-center">Baubau, Sulawesi Tenggara</p>
         </div>
     </div>
-    <div class="w-ful flex p-2 justify-evenly mt-5 gap-y-2">
+    <div class="w-ful flex p-2 justify-evenly mt-5 gap-y-2 md:gap-y-5">
         <a href="">
-            <img class="w-9 h-9" src="svg/instagram.svg" alt="">
+            <img class="w-9 h-9 sm:h-12 sm:w-12 md:w-16 md:h-16" src="svg/instagram.svg" alt="">
         </a>
         <a href="">
-            <img class="w-9 h-9" src="svg/facebook.svg" alt="">
+            <img class="w-9 h-9 sm:h-12 sm:w-12 md:w-16 md:h-16" src="svg/facebook.svg" alt="">
         </a>
         <a href="">
-            <img class="w-9 h-9" src="svg/github.svg" alt="">
+            <img class="w-9 h-9 sm:h-12 sm:w-12 md:w-16 md:h-16" src="svg/github.svg" alt="">
         </a>
         <a href="">
-            <img class="w-9 h-9" src="svg/whatsapp.svg" alt="">
+            <img class="w-9 h-9 sm:h-12 sm:w-12 md:w-16 md:h-16" src="svg/whatsapp.svg" alt="">
         </a>
     </div>
 
-    <div class="p-4 mt-28 pt-16" id="about">
-        <h2 class="font-bold text-center text-lg">A little bit about me</h2>
-        <hr class="bg-slate-900 w-28 mx-auto mt-1">
+    <!-- about -->
+    <div class="p-4 mt-28 pt-16 sm:px-14" id="about">
+        <h2 class="font-bold text-center text-lg md:text-xl">A little bit about me</h2>
+        <hr class="border-b-black border w-28 mx-auto mt-1 sm:w-44  md:mb-8">
         <p class="mt-5 text-sm font-sans text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis animi fugit, nihil, explicabo voluptas consequatur voluptatem vero laudantium aliquid, quas delectus. Odio reiciendis, eius ad velit adipisci quae quo nobis?</p>
     </div>
     
+    <!-- project -->
     <div class="mt-28 pt-16" id="project">
-        <h2 class="font-bold text-lg text-center">Recent Project</h2>
-        <hr class="border mx-auto bg-black w-28 mt-1">
+        <h2 class="font-bold text-lg text-center md:text-xl ">Recent Project</h2>
+        <hr class="border-b-black border w-28 mx-auto mt-1 sm:w-44  md:mb-8">
         <div class="p-4 mt-5 shadow shadow-slate-500 w-4/5 mx-auto">
-            <img src="svg/project1.png" alt="">
-            <h3 class="font-semibold text-center text-sm">My Team </h3>
-            <p class="text-sm text-center mt-2">A project that i recently made just for fun</p>
+            <img src="svg/project1.png" alt="" class="xl:mb-4">
+            <h3 class="font-semibold text-center text-sm xl:text-lg xl:font-semibold">My Team </h3>
+            <p class="text-sm text-center mt-2 xl:text-base">A project that i recently made just for fun</p>
         </div>
         <div class="p-4 mt-5 shadow shadow-slate-500 w-4/5 mx-auto">
             <h2 class="text-center text-slate-600 font-semibold">COMING SOON</h2>
@@ -83,37 +96,38 @@
         </div>
     </div>
     
+    <!-- skill -->
     <div class="mt-28 pt-16" id="skill">
-        <h2 class="font-bold text-lg text-center">Skill</h2>
-        <hr class="border mx-auto bg-black w-28 mt-1">
+        <h2 class="font-bold text-lg text-center md:text-xl">Skill</h2>
+        <hr class="border-b-black border w-28 mx-auto mt-1 sm:w-44 md:mb-8">
         <div class="flex flex-col gap-y-2 mt-6">
             <div class="p-4 w-5/6 mx-auto">
-                <img src="svg/tailwindcss.svg" class="w-32 mx-auto" alt="tailwindcss">
+                <img src="svg/tailwindcss.svg" class="w-32 mx-auto sm:w-48" alt="tailwindcss">
             </div>
             <div class="p-4 w-5/6 mx-auto">
-                <img src="svg/javascript-js-seeklogo.com.svg" class="w-32 mx-auto" alt="javascript">
+                <img src="svg/javascript-js-seeklogo.com.svg" class="w-32 mx-auto sm:w-48" alt="javascript">
             </div>
             <div class="p-4 w-5/6 mx-auto">
-                <img src="svg/nodejs-seeklogo.com.svg" class="w-32 mx-auto" alt="nodejs">
+                <img src="svg/nodejs-seeklogo.com.svg" class="w-32 mx-auto sm:w-48" alt="nodejs">
             </div>
             <div class="p-4 w-5/6 mx-auto">
-                <img src="svg/mongodb.svg" class="w-32 mx-auto" alt="mongodb">
+                <img src="svg/mongodb.svg" class="w-32 mx-auto sm:w-48" alt="mongodb">
             </div>
             <div class="p-4 w-5/6 mx-auto">
-                <img src="svg/jwt.svg" class="w-32 mx-auto" alt="nodejs">
+                <img src="svg/jwt.svg" class="w-32 mx-auto sm:w-48" alt="nodejs">
             </div>
             <div class="p-4 w-5/6 mx-auto">
-                <img src="svg/typescript-seeklogo.com.svg" class="w-32 mx-auto grayscale" alt="typescript">
+                <img src="svg/typescript-seeklogo.com.svg" class="w-32 mx-auto sm:w-48 grayscale" alt="typescript">
                 <h2 class="text-center text-slate-600 font-semibold">COMING SOON</h2>
             </div>
             <div class="p-4 w-5/6 mx-auto">
-                <img src="svg/redis.svg" class="w-32 mx-auto grayscale" alt="java">
+                <img src="svg/redis.svg" class="w-32 mx-auto sm:w-48 grayscale" alt="java">
                 <h2 class="text-center text-slate-600 font-semibold">COMING SOON</h2>
             </div>
         </div>
     </div>
 
-    <footer class="w-full bg-slate-900 text-gray-300 mt-10 text-[12px] p-2 text-center">
+    <footer class="w-full bg-slate-900 text-gray-300 mt-10 text-[12px] p-2 text-center md:p-3">
         <p>&copy; Copyright 2023</p>
     </footer>
     
